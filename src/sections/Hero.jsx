@@ -1,4 +1,6 @@
 import { words } from "../constants";
+import Button from "../components/Button";
+import HeroExperience from "../components/HeroModels/HeroExperience";
 
 const Hero = () => {
   return (
@@ -7,7 +9,14 @@ const Hero = () => {
         <img src="/images/bg.png" alt="background" />
       </div>
       <div className="hero-layout">
+        {/* LEFT: HERO CONTENT */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+          {/* right: 3D */}
+          <figure>
+            <div className="hero-3d-layout border-red-200 border-2">
+              <HeroExperience />
+            </div>
+          </figure>
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
@@ -24,7 +33,6 @@ const Hero = () => {
                           alt={word.text}
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
-
                         <span>{word.text}</span>
                       </span>
                     ))}
@@ -38,6 +46,11 @@ const Hero = () => {
               Hi, I'm Gabriel, a developer based in Brazil with a passion for
               code
             </p>
+            <Button
+              id="button"
+              className="md:w-80 md:h-16 w-6 h-12"
+              text="See my Work"
+            />
           </div>
         </header>
       </div>
