@@ -1,13 +1,14 @@
-import { words } from "../constants";
-import Button from "../components/Button";
-import HeroExperience from "../components/HeroModels/HeroExperience";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { words } from '../constants';
+import Button from '../components/Button';
+import HeroExperience from '../components/HeroModels/HeroExperience';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import AnimatedCounter from '../components/AnimatedCounter';
 
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
-      ".hero-text h1",
+      '.hero-text h1',
       {
         y: 50,
         opacity: 0,
@@ -17,8 +18,8 @@ const Hero = () => {
         opacity: 1,
         stagger: 0.2,
         duration: 1,
-        ease: "power2.inOut",
-      }
+        ease: 'power2.inOut',
+      },
     );
   });
 
@@ -28,14 +29,7 @@ const Hero = () => {
         <img src="/images/bg.png" alt="background" />
       </div>
       <div className="hero-layout">
-        {/* LEFT: HERO CONTENT */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          {/* right: 3D */}
-          <figure>
-            <div className="hero-3d-layout">
-              <HeroExperience />
-            </div>
-          </figure>
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
@@ -72,7 +66,14 @@ const Hero = () => {
             />
           </div>
         </header>
+        {/* right: 3D */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
+      <AnimatedCounter />
     </section>
   );
 };
