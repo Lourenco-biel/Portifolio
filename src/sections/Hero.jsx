@@ -1,6 +1,28 @@
-import { words } from "../constants";
+import { words } from '../constants';
+import Button from '../components/Button';
+import HeroExperience from '../components/HeroModels/HeroExperience';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import AnimatedCounter from '../components/AnimatedCounter';
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      '.hero-text h1',
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power2.inOut',
+      },
+    );
+  });
+
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
@@ -24,7 +46,6 @@ const Hero = () => {
                           alt={word.text}
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
-
                         <span>{word.text}</span>
                       </span>
                     ))}
@@ -38,9 +59,21 @@ const Hero = () => {
               Hi, I'm Gabriel, a developer based in Brazil with a passion for
               code
             </p>
+            <Button
+              id="button"
+              className="md:w-80 md:h-16 w-60 h-12"
+              text="See my Work"
+            />
           </div>
         </header>
+        {/* right: 3D */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
+      <AnimatedCounter />
     </section>
   );
 };
