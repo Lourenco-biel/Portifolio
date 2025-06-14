@@ -105,8 +105,12 @@ const ExperienceSection = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                    <div className="w-60 h-24 flex items-center justify-normal">
+                      <img
+                        src={card.imgPath}
+                        alt="exp-img"
+                        className="max-h-full object-container"
+                      />
                     </div>
                   </GlowCard>
                 </div>
@@ -118,17 +122,33 @@ const ExperienceSection = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <img
+                          src={card.logoPath}
+                          alt="logo"
+                          className="object-cover"
+                        />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
+                        <p className="text-[#839CB5] italic">Achievements</p>
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
+                          {card.achievements.map((achievement, index) => (
+                            <li key={index} className="text-lg">
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
+                        <p className="text-[#839CB5] italic">Context</p>
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
+                          <li className="text-lg">{card.context}</li>
+                        </ul>
                         <p className="text-[#839CB5] italic">
                           Responsibilities
                         </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
                           {card.responsibilities.map(
                             (responsibility, index) => (
                               <li key={index} className="text-lg">
