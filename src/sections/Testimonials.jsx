@@ -15,11 +15,24 @@ const Testimonials = () => {
             <GlowCard card={{ review }}>
               <div className="flex items-center gap-3">
                 <div>
-                  <img src={imgPath} alt={name} />
+                  <img
+                    className="w-12 h-12 rounded-full object-cover"
+                    src={imgPath}
+                    alt={name}
+                  />
                 </div>
                 <div>
                   <p className="font-bold">{name}</p>
-                  <p className="text-white-50">{mentions}</p>
+                  <div className="flex items-center gap-2">
+                    <img
+                      className="w-4 h-4 object-cover"
+                      src={mentions.imgPath}
+                      alt={mentions.name}
+                    />
+                    <p className="text-white-50 cursor-pointer!">
+                      {mentions.name}
+                    </p>
+                  </div>
                 </div>
               </div>
             </GlowCard>
