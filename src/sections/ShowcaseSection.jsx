@@ -49,6 +49,14 @@ const ShowcaseSection = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
+        <a
+          href="https://github.com/Lourenco-biel"
+          className="text-white-50 md:text-xl cursor-pointer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Access my GitHub
+        </a>
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={rydeRef}>
             <div className="image-wrapper">
