@@ -1,14 +1,18 @@
 import GlowCard from '../components/GlowCard';
 import TitleHeader from '../components/TitleHeader';
-import { testimonials } from '../constants';
+import { useConstants } from '../constants';
+import { useTranslation } from 'react-i18next';
 
 const Testimonials = () => {
+  const { t } = useTranslation('testimonials');
+  const { testimonials } = useConstants();
+
   return (
     <section id="testimonials" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="What People Say About Me?"
-          sub="⭐ Client Feedback Highlights"
+          title={t('titleHeader.title')}
+          sub={t('titleHeader.sub')}
         />
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
           {testimonials.map(({ imgPath, name, mentions, review }) => (

@@ -1,0 +1,13 @@
+{
+  "gitHub": "Acesse meu GitHub",
+  "firstProject": {
+    "title": "Corridas sob Demanda Simplificadas com um Aplicativo Poderoso e Fácil de Usar chamado Ryde",
+    "sub": "Um aplicativo construído com React Native, Expo e TailwindCSS para uma experiência rápida e amigável."
+  },
+  "secondProject": {
+    "title": "A Plataforma de Gerenciamento de Biblioteca"
+  },
+  "thirdProject": {
+    "title": "YC Directory - Um Aplicativo de Vitrine de Startups"
+  }
+}

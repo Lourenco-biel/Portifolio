@@ -1,0 +1,18 @@
+{
+  "titleHeader": {
+    "title": "Get in Touch – Let’s Connect",
+    "sub": "💬 Have questions or ideas? Let’s talk! 🚀"
+  },
+  "forData": {
+    "nameLabel": "Your name",
+    "namePlaceholder": "What’s your good name?",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "What’s your email address?",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "How can I help you?",
+    "button": {
+      "sending": "Sending...",
+      "done": "Send Message"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "titleHeader": {
+    "title": "Entre em Contato – Vamos Conectar",
+    "sub": "💬 Tem perguntas ou ideias? Vamos conversar! 🚀"
+  },
+  "forData": {
+    "nameLabel": "Seu nome",
+    "namePlaceholder": "Qual é o seu nome?",
+    "emailLabel": "Seu Email",
+    "emailPlaceholder": "Qual é o seu endereço de email?",
+    "messageLabel": "Sua Mensagem",
+    "messagePlaceholder": "Como posso ajudar você?",
+    "button": {
+      "sending": "Enviando...",
+      "done": "Enviar Mensagem"
+    }
+  }
+}

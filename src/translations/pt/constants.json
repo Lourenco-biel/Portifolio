@@ -1,0 +1,215 @@
+{
+  "navLinks": [
+    { "name": "Trabalho", "link": "#work" },
+    { "name": "Experiência", "link": "#experience" },
+    { "name": "Habilidades", "link": "#skills" },
+    { "name": "Depoimentos", "link": "#testimonials" }
+  ],
+  "words": [
+    { "text": "Ideias", "imgPath": "/images/ideas.svg" },
+    { "text": "Conceitos", "imgPath": "/images/concepts.svg" },
+    { "text": "Designs", "imgPath": "/images/designs.svg" },
+    { "text": "Código", "imgPath": "/images/code.svg" },
+    { "text": "Ideias", "imgPath": "/images/ideas.svg" },
+    { "text": "Conceitos", "imgPath": "/images/concepts.svg" },
+    { "text": "Designs", "imgPath": "/images/designs.svg" },
+    { "text": "Código", "imgPath": "/images/code.svg" }
+  ],
+  "counterItems": [
+    { "value": 3, "suffix": "+", "label": "Anos de Experiência" },
+    { "value": 40, "suffix": "+", "label": "Projetos Concluídos" },
+    { "value": 15, "suffix": "+", "label": "Tecnologias Dominadas" },
+    { "value": 5, "suffix": "+", "label": "Setores de Mercado Atendidos" }
+  ],
+  "logoIconsList": [
+    { "imgPath": "/images/logos/company-logo-1.png" },
+    { "imgPath": "/images/logos/company-logo-2.png" },
+    { "imgPath": "/images/logos/company-logo-3.png" },
+    { "imgPath": "/images/logos/company-logo-4.png" },
+    { "imgPath": "/images/logos/company-logo-5.png" },
+    { "imgPath": "/images/logos/company-logo-6.png" },
+    { "imgPath": "/images/logos/company-logo-7.png" },
+    { "imgPath": "/images/logos/company-logo-8.png" },
+    { "imgPath": "/images/logos/company-logo-9.png" },
+    { "imgPath": "/images/logos/company-logo-10.png" },
+    { "imgPath": "/images/logos/company-logo-11.png" }
+  ],
+  "abilities": [
+    {
+      "imgPath": "/images/ideia.png",
+      "title": "Solucionador de Problemas",
+      "desc": "Transformando desafios complexos em soluções eficientes e elegantes."
+    },
+    {
+      "imgPath": "/images/raio.png",
+      "title": "Otimização de Performance",
+      "desc": "Aumentando a velocidade e eficiência da aplicação para uma experiência superior."
+    },
+    {
+      "imgPath": "/images/inteligencia-artificial.png",
+      "title": "Adaptabilidade Técnica",
+      "desc": "Adaptação rápida a novas tecnologias e requisitos em ante mudança."
+    }
+  ],
+  "techStackImgs": [
+    { "name": "Desenvolvedor React", "imgPath": "/images/logos/react.png" },
+    { "name": "Desenvolvedor Python", "imgPath": "/images/logos/python.svg" },
+    { "name": "Desenvolvedor Backend", "imgPath": "/images/logos/node.png" },
+    {
+      "name": "Desenvolvedor Interativo",
+      "imgPath": "/images/logos/three.png"
+    },
+    { "name": "Gerente de Projeto", "imgPath": "/images/logos/git.svg" }
+  ],
+  "techStackIcons": [
+    {
+      "name": "Desenvolvedor React",
+      "modelPath": "/models/react_logo-transformed.glb",
+      "scale": 1,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Desenvolvedor Python",
+      "modelPath": "/models/python-transformed.glb",
+      "scale": 0.8,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Desenvolvedor Backend",
+      "modelPath": "/models/node-transformed.glb",
+      "scale": 5,
+      "rotation": [0, -1.57079632679, 0]
+    },
+    {
+      "name": "Desenvolvedor Interativo",
+      "modelPath": "/models/three.js-transformed.glb",
+      "scale": 0.05,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Gerente de Projeto",
+      "modelPath": "/models/git-svg-transformed.glb",
+      "scale": 0.05,
+      "rotation": [0, -0.78539816339, 0]
+    }
+  ],
+  "expCards": [
+    {
+      "review": "A qualidade excepcional do código do Gabriel e sua mentalidade orientada a processos transformaram nosso fluxo de desenvolvimento. Suas soluções técnicas não apenas melhoraram o desempenho, mas também estabeleceram práticas sustentáveis que continuam beneficiando toda a equipe.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "Engenheiro Frontend",
+      "date": "Outubro 2023 - Fevereiro 2025",
+      "responsibilities": [
+        "Responsável pelo controle de qualidade do código revisando o frontend.",
+        "Participou ativamente da manutenção dos produtos oferecidos.",
+        "Participou ativamente da criação de novos produtos e funcionalidades.",
+        "Guiou a equipe na aplicação das melhores práticas de desenvolvimento frontend.",
+        "Desenvolveu soluções para reduzir custos com serviços de terceiros."
+      ],
+      "achievements": [
+        "Aumentou a eficiência em 89% ao desenvolver um sistema avançado de captura de dados para compartilhamento e visualização interativa de relatórios.",
+        "Reduziu em 100% os problemas de pagamento com novos usuários."
+      ],
+      "context": "A Rappi se consolidou como o superapp mais completo da América Latina. O Projeto Smart Menu melhora significativamente a gestão de restaurantes com inteligência de dados dos concorrentes e ferramentas para controle de cardápio com integração total à plataforma da Rappi."
+    },
+    {
+      "review": "A criatividade e a abordagem proativa do Gabriel o fizeram se destacar imediatamente. Sua excelente comunicação conectou equipes, enquanto suas soluções inovadoras superaram antemente nossas expectativas.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "Engenheiro Frontend Júnior",
+      "date": "Julho 2023 - Outubro 2023",
+      "responsibilities": [
+        "Participou ativamente do controle de qualidade do código revisando o frontend.",
+        "Participou da manutenção dos produtos oferecidos.",
+        "Participou da criação de novos produtos e funcionalidades."
+      ],
+      "achievements": [
+        "Otimização de 70% nos gastos financeiros com a criação de chatbot IA para dúvidas frequentes.",
+        "Aumento de 40% na produtividade dos produtos."
+      ],
+      "context": "Atuei como engenheiro júnior contribuindo com o time na evolução do projeto. Participei da criação e manutenção de produtos no projeto Smart Menu, que otimiza a gestão de restaurantes com dados competitivos e integração com a plataforma Rappi."
+    },
+    {
+      "review": "Gabriel é a definição de velocidade! Sua curva de aprendizado foi extremamente rápida e ele desenvolveu funcionalidades chave em poucas semanas. A qualidade e segurança do seu código trazem tranquilidade para todo o time.",
+      "imgPath": "/images/Box-Delivery-Branco.png",
+      "logoPath": "/images/Box-Delivery-Branco.png",
+      "title": "Engenheiro Frontend Júnior",
+      "date": "Agosto 2022 - Julho 2023",
+      "responsibilities": [
+        "Reduziu em 3x o tamanho do bundle ao reescrever o frontend da aplicação web.",
+        "Revisava código ativamente como parte do controle de qualidade.",
+        "Participava da criação e manutenção de funcionalidades."
+      ],
+      "achievements": [
+        "Redução de 3x no tamanho do bundle da aplicação.",
+        "Aumento de 10x no desempenho do sistema."
+      ],
+      "context": "A Box Delivery é uma startup especializada em entregas rápidas. Atuei em 5 projetos criando e mantendo sistemas como: gerenciamento de restaurantes, carrinho de compras, pedidos para estádios e sistema de alocação de entregadores."
+    }
+  ],
+  "expLogos": [
+    { "name": "logo1", "imgPath": "/images/logo1.png" },
+    { "name": "logo2", "imgPath": "/images/logo2.png" },
+    { "name": "logo3", "imgPath": "/images/logo3.png" }
+  ],
+  "testimonials": [
+    {
+      "name": "Ariel Paixão",
+      "mentions": {
+        "name": "arielpaixao",
+        "url": "https://www.linkedin.com/in/arielpaixao/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel, é um entusiasta da tecnologia, sempre foi muito proativo em aprender a superar obstáculos. Sempre buscando não apenas como fazer, mas por que se faz de determinada forma. Com isso, Gabriel avança antemente rumo a um conhecimento cada vez maior e mais profundo na área de tecnologia. É ótimo trocar experiências técnicas com ele.",
+      "imgPath": "/images/ariel.jpeg"
+    },
+    {
+      "name": "Barbara Figueiredo",
+      "mentions": {
+        "name": "barbarafigueiredosantos",
+        "url": "https://www.linkedin.com/in/barbarafigueiredosantos/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel é a definição de velocidade! A curva de aprendizado para uma nova tecnologia foi extremamente rápida, e ele desenvolveu pontos importantes de um novo produto em poucas semanas. Além disso, se integra muito bem ao time, estando sempre disponível e aberto a sugestões. Uma das melhores coisas de ruir com ele é a tranquilidade de saber que o código está sendo desenvolvido com qualidade e segurança, sendo ajustado sempre que necessário — e essa validação é feita por ele fora das sprints.",
+      "imgPath": "/images/barbara.jpeg"
+    },
+    {
+      "name": "Felipe Stefanelli",
+      "mentions": {
+        "name": "felipe-stefanelli",
+        "url": "https://www.linkedin.com/in/felipe-stefanelli/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel foi um dos melhores desenvolvedores com quem já trabalhei. Sua rapidez na resolução de problemas, pensamento prático e ótima comunicação facilitaram muito o trabalho. Sempre entregou no prazo e ajudou o time quando precisávamos. Recomendo muito trabalhar com ele.",
+      "imgPath": "/images/felipe-pipo.jpeg"
+    },
+    {
+      "name": "Filipe Costa",
+      "mentions": {
+        "name": "dev-nascimento",
+        "url": "https://www.linkedin.com/in/dev-nascimento/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel é um colega muito dedicado e entusiasmado, sempre buscando formas de crescer profissionalmente. Tem bastante conhecimento em JavaScript, tendo participado de diversos projetos com a linguagem. É certamente um ótimo profissional e uma excelente pessoa.",
+      "imgPath": "/images/felipe-costa.jpeg"
+    }
+  ],
+  "socialImgs": [
+    {
+      "name": "insta",
+      "url": "https://www.instagram.com/lourenco.mp4",
+      "imgPath": "/images/insta.png"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Lourenco-biel",
+      "imgPath": "/images/icons8-github-64.png"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/gabriel-ibiapino-749b78198/",
+      "imgPath": "/images/linkedin.png"
+    }
+  ]
+}

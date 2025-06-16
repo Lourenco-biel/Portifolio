@@ -1,8 +1,10 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import { counterItems } from '../constants';
+import { useConstants } from '../constants';
 
 const AnimatedCounter = () => {
+  const { counterItems } = useConstants();
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
