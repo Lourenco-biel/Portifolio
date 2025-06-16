@@ -1,0 +1,212 @@
+{
+  "navLinks": [
+    { "name": "Work", "link": "#work" },
+    { "name": "Experience", "link": "#experience" },
+    { "name": "Skills", "link": "#skills" },
+    { "name": "Testimonials", "link": "#testimonials" }
+  ],
+  "words": [
+    { "text": "Ideas", "imgPath": "/images/ideas.svg" },
+    { "text": "Concepts", "imgPath": "/images/concepts.svg" },
+    { "text": "Designs", "imgPath": "/images/designs.svg" },
+    { "text": "Code", "imgPath": "/images/code.svg" },
+    { "text": "Ideas", "imgPath": "/images/ideas.svg" },
+    { "text": "Concepts", "imgPath": "/images/concepts.svg" },
+    { "text": "Designs", "imgPath": "/images/designs.svg" },
+    { "text": "Code", "imgPath": "/images/code.svg" }
+  ],
+  "counterItems": [
+    { "value": 3, "suffix": "+", "label": "Years of Experience" },
+    { "value": 40, "suffix": "+", "label": "Completed Projects" },
+    { "value": 15, "suffix": "+", "label": "Mastered Technologies" },
+    { "value": 5, "suffix": "+", "label": "Served Market Sectors" }
+  ],
+  "logoIconsList": [
+    { "imgPath": "/images/logos/company-logo-1.png" },
+    { "imgPath": "/images/logos/company-logo-2.png" },
+    { "imgPath": "/images/logos/company-logo-3.png" },
+    { "imgPath": "/images/logos/company-logo-4.png" },
+    { "imgPath": "/images/logos/company-logo-5.png" },
+    { "imgPath": "/images/logos/company-logo-6.png" },
+    { "imgPath": "/images/logos/company-logo-7.png" },
+    { "imgPath": "/images/logos/company-logo-8.png" },
+    { "imgPath": "/images/logos/company-logo-9.png" },
+    { "imgPath": "/images/logos/company-logo-10.png" },
+    { "imgPath": "/images/logos/company-logo-11.png" }
+  ],
+  "abilities": [
+    {
+      "imgPath": "/images/ideia.png",
+      "title": "Problem Solver",
+      "desc": "Turning complex challenges into efficient and elegant solutions."
+    },
+    {
+      "imgPath": "/images/raio.png",
+      "title": "Performance Optimization",
+      "desc": "Boosting speed and efficiency for a superior application experience."
+    },
+    {
+      "imgPath": "/images/inteligencia-artificial.png",
+      "title": "Technical Adaptability",
+      "desc": "Quick adaptation to new technologies and evolving requirements."
+    }
+  ],
+  "techStackImgs": [
+    { "name": "React Developer", "imgPath": "/images/logos/react.png" },
+    { "name": "Python Developer", "imgPath": "/images/logos/python.svg" },
+    { "name": "Backend Developer", "imgPath": "/images/logos/node.png" },
+    { "name": "Interactive Developer", "imgPath": "/images/logos/three.png" },
+    { "name": "Project Manager", "imgPath": "/images/logos/git.svg" }
+  ],
+  "techStackIcons": [
+    {
+      "name": "React Developer",
+      "modelPath": "/models/react_logo-transformed.glb",
+      "scale": 1,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Python Developer",
+      "modelPath": "/models/python-transformed.glb",
+      "scale": 0.8,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Backend Developer",
+      "modelPath": "/models/node-transformed.glb",
+      "scale": 5,
+      "rotation": [0, -1.5708, 0]
+    },
+    {
+      "name": "Interactive Developer",
+      "modelPath": "/models/three.js-transformed.glb",
+      "scale": 0.05,
+      "rotation": [0, 0, 0]
+    },
+    {
+      "name": "Project Manager",
+      "modelPath": "/models/git-svg-transformed.glb",
+      "scale": 0.05,
+      "rotation": [0, -0.7854, 0]
+    }
+  ],
+  "expCards": [
+    {
+      "review": "Gabriel's exceptional code quality and process-oriented mindset transformed our development flow. His technical solutions not only improved performance but also established sustainable practices that continue to benefit the entire team.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "Frontend Engineer",
+      "date": "October 2023 - February 2025",
+      "responsibilities": [
+        "Responsible for code quality control by reviewing frontend code.",
+        "Actively participated in product maintenance.",
+        "Contributed to the development of new products and features.",
+        "Guided the team in applying best frontend development practices.",
+        "Developed solutions to reduce third-party service costs."
+      ],
+      "achievements": [
+        "Increased efficiency by 89% with a data capture and report sharing system.",
+        "Eliminated 100% of new user payment issues."
+      ],
+      "context": "Rappi is Latin America's leading superapp. The Smart Menu project significantly improves restaurant management through competitor data intelligence and full integration with the Rappi platform."
+    },
+    {
+      "review": "Gabriel's creativity and proactive approach made him stand out immediately. His excellent communication connected teams, and his innovative solutions consistently exceeded expectations.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "Junior Frontend Engineer",
+      "date": "July 2023 - October 2023",
+      "responsibilities": [
+        "Actively contributed to code quality control by reviewing frontend code.",
+        "Helped maintain offered products.",
+        "Participated in the development of new products and features."
+      ],
+      "achievements": [
+        "70% financial savings by creating an AI chatbot for FAQs.",
+        "40% increase in product team productivity."
+      ],
+      "context": "Worked as a junior engineer supporting the team on the Smart Menu project, optimizing restaurant management through competitor insights and platform integration."
+    },
+    {
+      "review": "Gabriel is the definition of speed! His learning curve was extremely fast, and he developed key features in just a few weeks. The quality and security of his code bring peace of mind to the whole team.",
+      "imgPath": "/images/Box-Delivery-Branco.png",
+      "logoPath": "/images/Box-Delivery-Branco.png",
+      "title": "Junior Frontend Engineer",
+      "date": "August 2022 - July 2023",
+      "responsibilities": [
+        "Reduced bundle size 3x by rewriting the frontend.",
+        "Actively reviewed code as part of quality control.",
+        "Participated in creating and maintaining features."
+      ],
+      "achievements": [
+        "Reduced app bundle size by 3x.",
+        "Boosted system performance by 10x."
+      ],
+      "context": "Box Delivery is a startup specializing in fast deliveries. I worked on 5 projects including restaurant management, shopping cart, stadium orders, and delivery allocation systems."
+    }
+  ],
+  "expLogos": [
+    { "name": "logo1", "imgPath": "/images/logo1.png" },
+    { "name": "logo2", "imgPath": "/images/logo2.png" },
+    { "name": "logo3", "imgPath": "/images/logo3.png" }
+  ],
+  "testimonials": [
+    {
+      "name": "Ariel Paixão",
+      "mentions": {
+        "name": "arielpaixao",
+        "url": "https://www.linkedin.com/in/arielpaixao/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel is a tech enthusiast, always proactive in learning and overcoming challenges. He doesn't just ask how something is done but also why, which helps him grow deeply in the tech field. It's great exchanging technical ideas with him.",
+      "imgPath": "/images/ariel.jpeg"
+    },
+    {
+      "name": "Barbara Figueiredo",
+      "mentions": {
+        "name": "barbarafigueiredosantos",
+        "url": "https://www.linkedin.com/in/barbarafigueiredosantos/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel is incredibly fast! He learned a new tech quickly and built key features within weeks. He integrates well with the team and ensures the code is high-quality and safe—even outside sprint reviews.",
+      "imgPath": "/images/barbara.jpeg"
+    },
+    {
+      "name": "Felipe Stefanelli",
+      "mentions": {
+        "name": "felipe-stefanelli",
+        "url": "https://www.linkedin.com/in/felipe-stefanelli/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel is one of the best developers I’ve worked with. His problem-solving speed, practical thinking, and great communication made everything easier. He always delivered on time and supported the team when needed. Highly recommended.",
+      "imgPath": "/images/felipe-pipo.jpeg"
+    },
+    {
+      "name": "Filipe Costa",
+      "mentions": {
+        "name": "dev-nascimento",
+        "url": "https://www.linkedin.com/in/dev-nascimento/",
+        "imgPath": "/images/linkedin.png"
+      },
+      "review": "Gabriel is a dedicated and enthusiastic colleague, always seeking professional growth. He has strong knowledge of JavaScript and has contributed to many projects. A great professional and an even better person.",
+      "imgPath": "/images/felipe-costa.jpeg"
+    }
+  ],
+  "socialImgs": [
+    {
+      "name": "insta",
+      "url": "https://www.instagram.com/lourenco.mp4",
+      "imgPath": "/images/insta.png"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Lourenco-biel",
+      "imgPath": "/images/icons8-github-64.png"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/gabriel-ibiapino-749b78198/",
+      "imgPath": "/images/linkedin.png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "gitHub": "Access my GitHub",
+  "firstProject": {
+    "title": "On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde",
+    "sub": "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience."
+  },
+  "secondProject": {
+    "title": "The Library Management Platform"
+  },
+  "thirdProject": {
+    "title": "YC Directory - A Startup Showcase App"
+  }
+}

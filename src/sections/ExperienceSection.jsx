@@ -2,13 +2,17 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { expCards } from '../constants';
 import TitleHeader from '../components/TitleHeader';
 import GlowCard from '../components/GlowCard';
+import { useConstants } from '../constants';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
+  const { t } = useTranslation('experienceSection');
+  const { expCards } = useConstants();
+
   useGSAP(() => {
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
@@ -62,6 +66,7 @@ const ExperienceSection = () => {
       },
     });
 
+    console.log('expCards', expCards);
     // Loop through each expText element and animate them in
     // as the user scrolls to each text element
     gsap.utils.toArray('.expText').forEach((text) => {
@@ -96,8 +101,8 @@ const ExperienceSection = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title={t('titleHeader.title')}
+          sub={t('titleHeader.sub')}
         />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -133,7 +138,9 @@ const ExperienceSection = () => {
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
-                        <p className="text-[#839CB5] italic">Achievements</p>
+                        <p className="text-[#839CB5] italic">
+                          {t('achievement')}
+                        </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
                           {card.achievements.map((achievement, index) => (
                             <li key={index} className="text-lg">
@@ -141,12 +148,12 @@ const ExperienceSection = () => {
                             </li>
                           ))}
                         </ul>
-                        <p className="text-[#839CB5] italic">Context</p>
+                        <p className="text-[#839CB5] italic">{t('context')}</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
                           <li className="text-lg">{card.context}</li>
                         </ul>
                         <p className="text-[#839CB5] italic">
-                          Responsibilities
+                          {t('responsibilities')}
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
                           {card.responsibilities.map(

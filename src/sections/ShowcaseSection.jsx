@@ -2,10 +2,12 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
+  const { t } = useTranslation('showcaseSection');
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
@@ -55,7 +57,7 @@ const ShowcaseSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Access my GitHub
+          {t('gitHub')}
         </a>
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={rydeRef}>
@@ -63,13 +65,9 @@ const ShowcaseSection = () => {
               <img src="/images/project1.png" alt="Ryder App Interfacec" />
             </div>
             <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
-              </h2>
+              <h2>{t('firstProject.title')}</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                {t('firstProject.sub')}
               </p>
             </div>
           </div>
@@ -82,14 +80,14 @@ const ShowcaseSection = () => {
                   alt="Libary Management Platform"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>{t('secondProject.title')}</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img src="/images/project3.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>{t('thirdProject.title')}</h2>
             </div>
           </div>
         </div>

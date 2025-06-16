@@ -1,11 +1,15 @@
-import { words } from '../constants';
 import Button from '../components/Button';
 import HeroExperience from '../components/HeroModels/HeroExperience';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter';
+import { useConstants } from '../constants';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation('hero');
+  const { words } = useConstants();
+
   useGSAP(() => {
     gsap.fromTo(
       '.hero-text h1',
@@ -33,7 +37,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                {t('firstText')}
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
@@ -52,17 +56,16 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>Into Real Projects</h1>
-              <h1>That Deliver Results</h1>
+              <h1>{t('secondText')}</h1>
+              <h1>{t('thirdText')}</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10">
-              Hi, I'm Gabriel, a developer based in Brazil with a passion for
-              code
+              {t('about')}
             </p>
             <Button
               id="button"
               className="md:w-80 md:h-16 w-60 h-12"
-              text="See my Work"
+              text={t('button')}
             />
           </div>
         </header>
