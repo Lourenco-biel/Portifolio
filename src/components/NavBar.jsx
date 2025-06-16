@@ -35,7 +35,7 @@ const NavBar = () => {
             className="px-1 py-1 border border-gray-300 rounded bg-white text-gray-700 flex items-center cursor-pointer gap-1"
             buttonContent={
               <img
-                src="/public/images/world.png"
+                src="/images/world.png"
                 className="icon w-7 object-cover roudend-full"
                 alt="lang"
               />
