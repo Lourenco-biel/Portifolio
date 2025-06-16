@@ -1,4 +1,4 @@
-import { logoIconsList } from '../constants';
+import { useConstants } from '../constants';
 
 const LogoIcon = ({ icon }) => {
   return (
@@ -8,6 +8,8 @@ const LogoIcon = ({ icon }) => {
   );
 };
 const LogoShowcase = () => {
+  const { logoIconsList } = useConstants();
+
   return (
     <div className="md:my-20 my-10 relative">
       <div className="gradient-edge" />

@@ -1,9 +1,21 @@
 import { useEffect, useState } from 'react';
-import { navLinks } from '../constants/index.js';
+import { useTranslation } from 'react-i18next';
+import { useConstants } from '../constants/index.js';
+import Dropdown from './Dropdown.jsx';
 
 const NavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation('navBar');
+  const { navLinks } = useConstants();
 
+  const [scrolled, setScrolled] = useState(false);
+  const { i18n } = useTranslation();
+  const optionsDropdown = [
+    { label: 'En', onClick: () => changeLanguage('en') },
+    { label: 'Pt', onClick: () => changeLanguage('pt') },
+  ];
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -17,9 +29,22 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
       <div className="inner">
-        <a className="logo" href="#hero">
-          Gabriel | Ibiapino
-        </a>
+        <div className="flex gap-4">
+          <Dropdown
+            options={optionsDropdown}
+            className="px-1 py-1 border border-gray-300 rounded bg-white text-gray-700 flex items-center cursor-pointer gap-1"
+            buttonContent={
+              <img
+                src="/public/images/world.png"
+                className="icon w-7 object-cover roudend-full"
+                alt="lang"
+              />
+            }
+          />
+          <a className="logo" href="#hero">
+            Gabriel | Ibiapino
+          </a>
+        </div>
 
         <nav className="desktop">
           <ul>
@@ -36,7 +61,7 @@ const NavBar = () => {
 
         <a href="#contact" className="contact-btn group">
           <div className="inner">
-            <span>Contact me</span>
+            <span>{t('button')}</span>
           </div>
         </a>
       </div>

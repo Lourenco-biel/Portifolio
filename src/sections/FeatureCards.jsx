@@ -1,6 +1,8 @@
-import { abilities } from '../constants';
+import { useConstants } from '../constants';
 
 const FeatureCards = () => {
+  const { abilities } = useConstants();
+
   return (
     <div className="w-full padding-x-lg">
       <div className="mx-auto grid-3-cols">
