@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="src/assets/images/readme.png" alt="Project Banner">  
+      <img src="/public/images/readme.png" alt="Project Banner">  
   <br />
   <div>
     <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
@@ -20,7 +20,6 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -138,4 +137,3 @@ const HelloWord = () => {
 
 export default HelloWord;
 ```
-
