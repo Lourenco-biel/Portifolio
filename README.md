@@ -96,20 +96,6 @@ VITE_APP_EMAILJS_TEMPLATE_ID=
 VITE_APP_EMAILJS_PUBLIC_KEY=
 ```
 
-### Replace the placeholder values with your actual credentials.
-
-- **[Syncfusion](https://jsm.dev/tourvisto-syncfusion)**
-
-- **[Appwrite](https://jsm.dev/tourvisto-appwrite)**
-
-- **[Gemini AI](https://aistudio.google.com/)**
-
-- **[Sentry](https://jsm.dev/tourvisto-sentry)**
-
-- **[Stripe](https://stripe.com/)**
-
-- **[Unsplash](https://unsplash.com/)**
-
 **Running the Project**
 
 ```bash
@@ -117,23 +103,3 @@ npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173/) in your browser to view the project.
-
-## <a name="snippets">🕸️ Snippets</a>
-
-<details>
-<summary><code>Example.css</code></summary>
-
-<details>
-<summary><code>app/routes/admin/dashboard.tsx</code></summary>
-
-```tsx
-const HelloWord = () => {
-  return (
-    <div>
-      <p>Hello Word</p>
-    </div>
-  );
-};
-
-export default HelloWord;
-```
