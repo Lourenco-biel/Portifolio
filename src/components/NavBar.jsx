@@ -22,8 +22,9 @@ const NavBar = () => {
       setScrolled(isScrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () =>
+      window.removeEventListener('scroll', handleScroll, { passive: true });
   }, []);
 
   return (
