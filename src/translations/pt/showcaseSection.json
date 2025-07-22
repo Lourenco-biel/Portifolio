@@ -1,13 +1,13 @@
 {
   "gitHub": "Acesse meu GitHub",
   "firstProject": {
-    "title": "Corridas sob Demanda Simplificadas com um Aplicativo Poderoso e Fácil de Usar chamado Ryde",
-    "sub": "Um aplicativo construído com React Native, Expo e TailwindCSS para uma experiência rápida e amigável."
+    "title": "Uma plataforma moderna de agência de viagens que cria roteiros personalizados com inteligência artificial, com base no país, estilo de viagem e interesses",
+    "sub": "Aplicativo desenvolvido com React Router v7, Appwrite e TailwindCSS para uma experiência rápida e fácil de usar."
   },
   "secondProject": {
-    "title": "A Plataforma de Gerenciamento de Biblioteca"
+    "title": "Sistema completo para gestão de restaurantes e delivery"
   },
   "thirdProject": {
-    "title": "YC Directory - Um Aplicativo de Vitrine de Startups"
+    "title": "Landing page responsiva inspirada no estilo da Nike"
   }
 }

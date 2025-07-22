@@ -62,7 +62,10 @@ const ShowcaseSection = () => {
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={rydeRef}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryder App Interfacec" />
+              <img
+                src="/images/projectDashboard.png"
+                alt="Ryder App Interfacec"
+              />
             </div>
             <div className="text-content">
               <h2>{t('firstProject.title')}</h2>
@@ -74,9 +77,9 @@ const ShowcaseSection = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className=" roundend-2">
                 <img
-                  src="/images/project2.png"
+                  src="/images/projectHamburguer.png"
                   alt="Libary Management Platform"
                 />
               </div>
@@ -85,7 +88,7 @@ const ShowcaseSection = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/projectNike.png" alt="nike web" />
               </div>
               <h2>{t('thirdProject.title')}</h2>
             </div>
