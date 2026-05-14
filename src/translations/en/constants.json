@@ -92,57 +92,69 @@
   ],
   "expCards": [
     {
-      "review": "Gabriel's exceptional code quality and process-oriented mindset transformed our development flow. His technical solutions not only improved performance but also established sustainable practices that continue to benefit the entire team.",
-      "imgPath": "/images/rappi_logo.png",
-      "logoPath": "/images/rappi_logo.png",
-      "title": "Frontend Engineer",
-      "date": "October 2023 - February 2025",
-      "responsibilities": [
-        "Responsible for code quality control by reviewing frontend code.",
-        "Actively participated in product maintenance.",
-        "Contributed to the development of new products and features.",
-        "Guided the team in applying best frontend development practices.",
-        "Developed solutions to reduce third-party service costs."
-      ],
+      "review": "Experience as an independent developer leading critical projects from conception to delivery, focusing on scalable architecture and AI innovation.",
+      "imgPath": "/images/freelance_logo.png",
+      "logoPath": "/images/freelance_logo.png",
+      "title": "Software Developer",
+      "date": "March 2025 - Present",
+      "responsibilities": [],
       "achievements": [
-        "Increased efficiency by 89% with a data capture and report sharing system.",
-        "Eliminated 100% of new user payment issues."
+        {
+          "title": "Freelancer — Indigo Hive",
+          "points": [
+            "Led the complete frontend restructuring using React, TypeScript, and Tailwind CSS, redefining architecture, flows, and UI, reducing complexity and preparing the product for scale.",
+            "Reorganized frontend architecture focusing on scalability and maintenance, applying best practices (Clean Architecture and Calisthenics), reducing coupling and improving system predictability.",
+            "Acted directly in the evolution of a complex educational platform with multiple profiles (student and creator), supporting diverse content (video, audio, PDF) and dynamic management flows with multilingual support (PT/EN).",
+            "Developed and optimized engagement features such as gamification, comments, likes, and lesson sharing, as well as contextual news feeds, increasing user retention and interaction."
+          ]
+        },
+        {
+          "title": "Freelancer — Independent Project | Civil Engineering / AI-first",
+          "points": [
+            "Acted from product conception with the client, gathering functional and non-functional requirements and defining the solution architecture based on DDD (Domain-Driven Design) and Clean Architecture, focusing on scalability and automation.",
+            "Designed a construction management system (Next.js, Nest.js) with an AI-first approach based on audio input for activity logging, covering everything from planning, budget, and schedule to execution and field site daily logs.",
+            "Developed integrations with external APIs (including weather services and report automation), expanding system intelligence and reducing manual tasks in the management process.",
+            "Structured communication flows between areas (engineering, purchasing, operation), allowing for change approval, traceability, and greater control over the construction execution cycle."
+          ]
+        }
       ],
-      "context": "Rappi is Latin America's leading superapp. The Smart Menu project significantly improves restaurant management through competitor data intelligence and full integration with the Rappi platform."
+      "context": "As a software developer, I worked on various projects, making architectural decisions, optimizing performance, and leading feature development."
     },
     {
-      "review": "Gabriel's creativity and proactive approach made him stand out immediately. His excellent communication connected teams, and his innovative solutions consistently exceeded expectations.",
+      "review": "Gabriel's exceptional code quality and process-oriented mindset transformed our development flow. His technical solutions not only improved performance but also established sustainable practices.",
       "imgPath": "/images/rappi_logo.png",
       "logoPath": "/images/rappi_logo.png",
-      "title": "Junior Frontend Engineer",
-      "date": "July 2023 - October 2023",
-      "responsibilities": [
-        "Actively contributed to code quality control by reviewing frontend code.",
-        "Helped maintain offered products.",
-        "Participated in the development of new products and features."
-      ],
+      "title": "Frontend Developer",
+      "date": "June 2023 - February 2025",
+      "responsibilities": [],
       "achievements": [
-        "70% financial savings by creating an AI chatbot for FAQs.",
-        "40% increase in product team productivity."
+        "Led the implementation of multi-platform menu management (iFood/Rappi) with React and Node.js.",
+        "Developed an internal restaurant mapping system with Django and Python for partner expansion.",
+        "Collaborated in the planning and architecture of menu import and editing features.",
+        "Developed a secure report sharing flow with Power BI, React, and Node.js.",
+        "89% efficiency in data consumption with interactive dashboards.",
+        "Prevented payment failures and unauthorized access via Stripe integration.",
+        "Created an AI FAQ chatbot (ChatGPT API) reducing support costs by 70%."
       ],
-      "context": "Worked as a junior engineer supporting the team on the Smart Menu project, optimizing restaurant management through competitor insights and platform integration."
+      "context": "Rappi · Full-time | São Paulo, Brazil · Remote. As a Frontend Developer, I worked on high-impact projects, responsible for frontend architecture, performance optimization, and feature leadership."
     },
     {
       "review": "Gabriel is the definition of speed! His learning curve was extremely fast, and he developed key features in just a few weeks. The quality and security of his code bring peace of mind to the whole team.",
       "imgPath": "/images/Box-Delivery-Branco.png",
       "logoPath": "/images/Box-Delivery-Branco.png",
-      "title": "Junior Frontend Engineer",
+      "title": "Junior Frontend Developer",
       "date": "August 2022 - July 2023",
-      "responsibilities": [
-        "Reduced bundle size 3x by rewriting the frontend.",
-        "Actively reviewed code as part of quality control.",
-        "Participated in creating and maintaining features."
-      ],
+      "responsibilities": [],
       "achievements": [
-        "Reduced app bundle size by 3x.",
-        "Boosted system performance by 10x."
+        "Developed QR Code ordering apps for malls and stadiums with React and Node.js.",
+        "Created data collection forms and field research tools for continuous improvement.",
+        "Developed restaurant management systems (menus, orders, refunds, and analytics).",
+        "Developed a distribution center management system with React, TypeScript, and PHP.",
+        "10x app performance boost by redesigning data fetching and step-by-step loading.",
+        "Implemented VIP area support with seat delivery in stadiums.",
+        "Optimized last-mile deliveries with real-time tracking."
       ],
-      "context": "Box Delivery is a startup specializing in fast deliveries. I worked on 5 projects including restaurant management, shopping cart, stadium orders, and delivery allocation systems."
+      "context": "Box Delivery · Full-time | Remote. As a Frontend Developer, I worked on several projects, from implementation to delivery."
     }
   ],
   "expLogos": [

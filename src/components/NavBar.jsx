@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useConstants } from '../constants/index.js';
-import Dropdown from './Dropdown.jsx';
-
 const NavBar = () => {
   const { t } = useTranslation('navBar');
   const { navLinks } = useConstants();
 
   const [scrolled, setScrolled] = useState(false);
   const { i18n } = useTranslation();
-  const optionsDropdown = [
-    { label: 'En', onClick: () => changeLanguage('en') },
-    { label: 'Pt', onClick: () => changeLanguage('pt') },
-  ];
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -30,25 +25,14 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
       <div className="inner">
-        <div className="flex gap-4">
-          <Dropdown
-            options={optionsDropdown}
-            className="px-1 py-1 border border-gray-300 rounded bg-white text-gray-700 flex items-center cursor-pointer gap-1"
-            buttonContent={
-              <img
-                src="/images/world.png"
-                className="icon w-7 object-cover roudend-full"
-                alt="lang"
-              />
-            }
-          />
+        <div className="flex items-center gap-4">
           <a className="logo" href="#hero">
             Gabriel | Ibiapino
           </a>
         </div>
 
         <nav className="desktop">
-          <ul>
+          <ul className="flex items-center space-x-8">
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
                 <a href={link}>
@@ -57,6 +41,31 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
+            {/* Improved Language Switcher */}
+            <li className="flex items-center ml-4">
+              <div className="flex items-center bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-1 gap-1">
+                <button
+                  onClick={() => changeLanguage('pt')}
+                  className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
+                    i18n.language === 'pt'
+                      ? 'bg-white text-black'
+                      : 'text-white/60 hover:text-white'
+                  }`}
+                >
+                  PT
+                </button>
+                <button
+                  onClick={() => changeLanguage('en')}
+                  className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
+                    i18n.language === 'en'
+                      ? 'bg-white text-black'
+                      : 'text-white/60 hover:text-white'
+                  }`}
+                >
+                  EN
+                </button>
+              </div>
+            </li>
           </ul>
         </nav>
 

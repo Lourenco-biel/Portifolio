@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import * as THREE from "three";
@@ -8,44 +8,36 @@ export function Room(props) {
   const screensRef = useRef();
   const matcapTexture = useTexture("/images/textures/mat1.png");
 
-  const curtainMaterial = new THREE.MeshPhongMaterial({
-    color: "#d90429",
-  });
-
-  const bodyMaterial = new THREE.MeshPhongMaterial({
-    map: matcapTexture,
-  });
-
-  const tableMaterial = new THREE.MeshPhongMaterial({
-    color: "#582f0e",
-  });
-
-  const radiatorMaterial = new THREE.MeshPhongMaterial({
-    color: "#fff",
-  });
-
-  const compMaterial = new THREE.MeshStandardMaterial({
-    color: "#fff",
-  });
-
-  const pillowMaterial = new THREE.MeshPhongMaterial({
-    color: "#8338ec",
-  });
-
-  const chairMaterial = new THREE.MeshPhongMaterial({
-    color: "#000",
-  });
+  const {
+    curtainMaterial,
+    bodyMaterial,
+    tableMaterial,
+    radiatorMaterial,
+    compMaterial,
+    pillowMaterial,
+    chairMaterial,
+  } = useMemo(() => ({
+    curtainMaterial: new THREE.MeshPhongMaterial({ color: "#d90429" }),
+    bodyMaterial: new THREE.MeshPhongMaterial({ map: matcapTexture }),
+    tableMaterial: new THREE.MeshPhongMaterial({ color: "#582f0e" }),
+    radiatorMaterial: new THREE.MeshPhongMaterial({ color: "#fff" }),
+    compMaterial: new THREE.MeshStandardMaterial({ color: "#fff" }),
+    pillowMaterial: new THREE.MeshPhongMaterial({ color: "#8338ec" }),
+    chairMaterial: new THREE.MeshPhongMaterial({ color: "#000" }),
+  }), [matcapTexture]);
 
   return (
     <group {...props} dispose={null}>
-      <EffectComposer>
-        <SelectiveBloom
-          selection={screensRef}
-          intensity={1.5} // Strength of the bloom
-          luminanceThreshold={0.2} // Minimum luminance needed
-          luminanceSmoothing={0.9} // Smooth transition
-        />
-      </EffectComposer>
+      {screensRef.current && (
+        <EffectComposer autoClear={false}>
+          <SelectiveBloom
+            selection={screensRef}
+            intensity={1.5}
+            luminanceThreshold={0.2}
+            luminanceSmoothing={0.9}
+          />
+        </EffectComposer>
+      )}
       <mesh
         geometry={nodes._________6_blinn1_0.geometry}
         material={curtainMaterial}
@@ -168,3 +160,4 @@ export function Room(props) {
 }
 
 useGLTF.preload("/models/optimized-room.glb");
+

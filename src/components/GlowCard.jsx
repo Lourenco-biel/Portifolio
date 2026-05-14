@@ -1,27 +1,26 @@
-import React, { useRef } from 'react';
-const GlowCard = ({ card, children, index }) => {
-  const cardRefs = useRef([]);
+import React, { useRef, useCallback } from 'react';
 
-  const handleMouseMove = (index) => (e) => {
-    const card = cardRefs.current[index];
+const GlowCard = ({ card, children }) => {
+  const cardRef = useRef(null);
+
+  const handleMouseMove = useCallback((e) => {
+    const card = cardRef.current;
     if (!card) return;
 
-    // get the mouse position relative to card
     const rect = card.getBoundingClientRect();
     const mouseX = e.clientX - rect.left - rect.width / 2;
     const mouseY = e.clientY - rect.top - rect.height / 2;
 
-    //calc the angle from the center of card
     let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
-
     angle = (angle + 360) % 360;
 
     card.style.setProperty('--start', angle + 60);
-  };
+  }, []);
+
   return (
     <div
-      ref={(el) => (cardRefs.current[index] = el)}
-      onMouseMove={handleMouseMove(index)}
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >
       <div className="glow" />
@@ -31,7 +30,7 @@ const GlowCard = ({ card, children, index }) => {
         ))}
       </div>
       <div className="mb-5">
-        <p className="text-while-50 text-lg">{card.review}</p>
+        <p className="text-white-50 text-lg">{card.review}</p>
       </div>
       {children}
     </div>
@@ -39,3 +38,4 @@ const GlowCard = ({ card, children, index }) => {
 };
 
 export default GlowCard;
+

@@ -4,22 +4,27 @@ import { useFrame } from "@react-three/fiber";
 const Particles = ({ count = 200 }) => {
   const mesh = useRef();
 
-  const particles = useMemo(() => {
-    const temp = [];
+  const { particles, initialPositions } = useMemo(() => {
+    const p = [];
+    const pos = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {
-      temp.push({
-        position: [
-          (Math.random() - 0.5) * 10,
-          Math.random() * 10 + 5, // higher starting point
-          (Math.random() - 0.5) * 10,
-        ],
+      const x = (Math.random() - 0.5) * 10;
+      const y = Math.random() * 10 + 5;
+      const z = (Math.random() - 0.5) * 10;
+      
+      p.push({
         speed: 0.005 + Math.random() * 0.001,
       });
+
+      pos[i * 3] = x;
+      pos[i * 3 + 1] = y;
+      pos[i * 3 + 2] = z;
     }
-    return temp;
+    return { particles: p, initialPositions: pos };
   }, [count]);
 
   useFrame(() => {
+    if (!mesh.current) return;
     const positions = mesh.current.geometry.attributes.position.array;
     for (let i = 0; i < count; i++) {
       let y = positions[i * 3 + 1];
@@ -30,20 +35,13 @@ const Particles = ({ count = 200 }) => {
     mesh.current.geometry.attributes.position.needsUpdate = true;
   });
 
-  const positions = new Float32Array(count * 3);
-  particles.forEach((p, i) => {
-    positions[i * 3] = p.position[0];
-    positions[i * 3 + 1] = p.position[1];
-    positions[i * 3 + 2] = p.position[2];
-  });
-
   return (
     <points ref={mesh}>
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
           count={count}
-          array={positions}
+          array={initialPositions}
           itemSize={3}
         />
       </bufferGeometry>
@@ -51,7 +49,7 @@ const Particles = ({ count = 200 }) => {
         color="#ffffff"
         size={0.05}
         transparent
-        opacity={0.9}
+        opacity={0.6}
         depthWrite={false}
       />
     </points>
@@ -59,3 +57,4 @@ const Particles = ({ count = 200 }) => {
 };
 
 export default Particles;
+

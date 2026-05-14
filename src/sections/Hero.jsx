@@ -40,9 +40,9 @@ const Hero = () => {
                 {t('firstText')}
                 <span className="slide">
                   <span className="wrapper">
-                    {words.map((word) => (
+                    {words.map((word, idx) => (
                       <span
-                        key={word.text}
+                        key={word.text + idx}
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
                         <img

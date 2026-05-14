@@ -95,57 +95,69 @@
   ],
   "expCards": [
     {
-      "review": "A qualidade excepcional do código do Gabriel e sua mentalidade orientada a processos transformaram nosso fluxo de desenvolvimento. Suas soluções técnicas não apenas melhoraram o desempenho, mas também estabeleceram práticas sustentáveis que continuam beneficiando toda a equipe.",
-      "imgPath": "/images/rappi_logo.png",
-      "logoPath": "/images/rappi_logo.png",
-      "title": "Engenheiro Frontend",
-      "date": "Outubro 2023 - Fevereiro 2025",
-      "responsibilities": [
-        "Responsável pelo controle de qualidade do código revisando o frontend.",
-        "Participou ativamente da manutenção dos produtos oferecidos.",
-        "Participou ativamente da criação de novos produtos e funcionalidades.",
-        "Guiou a equipe na aplicação das melhores práticas de desenvolvimento frontend.",
-        "Desenvolveu soluções para reduzir custos com serviços de terceiros."
-      ],
+      "review": "Experiência como desenvolvedor independente liderando projetos críticos, desde a concepção até a entrega, com foco em arquitetura escalável e inovação com IA.",
+      "imgPath": "/images/freelance_logo.png",
+      "logoPath": "/images/freelance_logo.png",
+      "title": "Desenvolvedor de Software",
+      "date": "Março 2025 - o momento",
+      "responsibilities": [],
       "achievements": [
-        "Aumentou a eficiência em 89% ao desenvolver um sistema avançado de captura de dados para compartilhamento e visualização interativa de relatórios.",
-        "Reduziu em 100% os problemas de pagamento com novos usuários."
+        {
+          "title": "Freelancer — Indigo Hive",
+          "points": [
+            "Liderei a reestruturação completa do front-end utilizando React, TypeScript e Tailwind CSS, redefinindo arquitetura, fluxos e UI, reduzindo complexidade e preparando o produto para escala.",
+            "Reorganizei a arquitetura front-end com foco em escalabilidade e manutenção, aplicando boas práticas (Clean Architecture e Calisthenics), reduzindo acoplamento e melhorando a previsibilidade de evolução do sistema.",
+            "Atuou diretamente na evolução de uma plataforma educacional complexa, com múltiplos perfis (aluno e criador), suportando conteúdos diversos (vídeo, áudio, PDF) e fluxos dinâmicos de gerenciamento com suporte multilíngue (PT/EN).",
+            "Desenvolvi e otimizei features de engajamento como gamificação, comentários, likes e compartilhamento de aulas, além de feed de notícias contextual, aumentando retenção e interação dos usuários."
+          ]
+        },
+        {
+          "title": "Freelancer — Projeto Independente | Engenharia Civil / AI-first",
+          "points": [
+            "Atuei desde a concepção do produto junto ao cliente, levantando requisitos funcionais e não funcionais e definindo arquitetura da solução baseada em DDD (Domain-Driven Design) e Clean Architecture, com foco em escalabilidade e automação.",
+            "Projetei um sistema de gestão de obras (Next.js, Nest.js) com abordagem AI-first baseados em input por áudio para registro de atividades, cobrindo desde planejamento, orçamento e cronograma até execução e diário de obra em campo.",
+            "Desenvolvi integrações com APIs externas (incluindo serviços de clima e automação de relatórios), ampliando a inteligência do sistema e reduzindo tarefas manuais no processo de gestão.",
+            "Estruturei fluxos de comunicação entre áreas (engenharia, compras, operação), permitindo aprovação de mudanças, rastreabilidade e maior controle sobre o ciclo de execução da obra."
+          ]
+        }
       ],
-      "context": "A Rappi se consolidou como o superapp mais completo da América Latina. O Projeto Smart Menu melhora significativamente a gestão de restaurantes com inteligência de dados dos concorrentes e ferramentas para controle de cardápio com integração total à plataforma da Rappi."
+      "context": "Como desenvolvedor de software, trabalhei em diversos projetos, tomando decisões arquitetônicas, otimizando o desempenho e liderando o desenvolvimento de funcionalidades."
     },
     {
-      "review": "A criatividade e a abordagem proativa do Gabriel o fizeram se destacar imediatamente. Sua excelente comunicação conectou equipes, enquanto suas soluções inovadoras superaram antemente nossas expectativas.",
+      "review": "A qualidade excepcional do código do Gabriel e sua mentalidade orientada a processos transformaram nosso fluxo de desenvolvimento. Suas soluções técnicas não apenas melhoraram o desempenho, mas também estabeleceram práticas sustentáveis.",
       "imgPath": "/images/rappi_logo.png",
       "logoPath": "/images/rappi_logo.png",
-      "title": "Engenheiro Frontend Júnior",
-      "date": "Julho 2023 - Outubro 2023",
-      "responsibilities": [
-        "Participou ativamente do controle de qualidade do código revisando o frontend.",
-        "Participou da manutenção dos produtos oferecidos.",
-        "Participou da criação de novos produtos e funcionalidades."
-      ],
+      "title": "Desenvolvedor Frontend Pleno",
+      "date": "Junho 2023 - Fevereiro 2025",
+      "responsibilities": [],
       "achievements": [
-        "Otimização de 70% nos gastos financeiros com a criação de chatbot IA para dúvidas frequentes.",
-        "Aumento de 40% na produtividade dos produtos."
+        "Liderei a implementação de gerenciamento de cardápios multiplataforma (iFood/Rappi) com React e Node.js.",
+        "Desenvolvi sistema interno de mapeamento de restaurantes com Django e Python para expansão de parceiros.",
+        "Colaborei no planejamento e arquitetura de funcionalidades de importação e edição de cardápios.",
+        "Desenvolvi fluxo seguro de compartilhamento de relatórios com Power BI, React e Node.js.",
+        "Eficiência de 89% no consumo de dados com dashboards interativos.",
+        "Prevenção de falhas em pagamentos e acessos indevidos via integração com Stripe.",
+        "Criação de chatbot de FAQ com IA (ChatGPT API) reduzindo custos de suporte em 70%."
       ],
-      "context": "Atuei como engenheiro júnior contribuindo com o time na evolução do projeto. Participei da criação e manutenção de produtos no projeto Smart Menu, que otimiza a gestão de restaurantes com dados competitivos e integração com a plataforma Rappi."
+      "context": "Rappi · Tempo integral | São Paulo, Brasil · Remoto. Como Desenvolvedor Frontend, atuei em projetos de alto impacto, sendo responsável pela arquitetura de frontend, otimização de desempenho e liderança de funcionalidades."
     },
     {
       "review": "Gabriel é a definição de velocidade! Sua curva de aprendizado foi extremamente rápida e ele desenvolveu funcionalidades chave em poucas semanas. A qualidade e segurança do seu código trazem tranquilidade para todo o time.",
       "imgPath": "/images/Box-Delivery-Branco.png",
       "logoPath": "/images/Box-Delivery-Branco.png",
-      "title": "Engenheiro Frontend Júnior",
+      "title": "Desenvolvedor Frontend Jr",
       "date": "Agosto 2022 - Julho 2023",
-      "responsibilities": [
-        "Reduziu em 3x o tamanho do bundle ao reescrever o frontend da aplicação web.",
-        "Revisava código ativamente como parte do controle de qualidade.",
-        "Participava da criação e manutenção de funcionalidades."
-      ],
+      "responsibilities": [],
       "achievements": [
-        "Redução de 3x no tamanho do bundle da aplicação.",
-        "Aumento de 10x no desempenho do sistema."
+        "Desenvolvi app de pedidos via QR Code para shoppings e estádios com React e Node.js.",
+        "Criei formulários de coleta de dados e pesquisas de campo para melhoria contínua.",
+        "Desenvolvi sistemas de gestão de restaurantes (cardápios, pedidos, reembolsos e analytics).",
+        "Desenvolvi sistema de gestão de centro de distribuição com React, TypeScript e PHP.",
+        "Aumento de 10x no desempenho do app via redesenho de busca de dados e carregamento em etapas.",
+        "Implementação de suporte a áreas VIP com entrega no assento em estádios.",
+        "Otimização de entregas last-mile com rastreamento em tempo real."
       ],
-      "context": "A Box Delivery é uma startup especializada em entregas rápidas. Atuei em 5 projetos criando e mantendo sistemas como: gerenciamento de restaurantes, carrinho de compras, pedidos para estádios e sistema de alocação de entregadores."
+      "context": "Box Delivery · Tempo integral | Remoto. Como Desenvolvedor front-end, atuei em diversos projetos, desde a implementação até a entrega."
     }
   ],
   "expLogos": [

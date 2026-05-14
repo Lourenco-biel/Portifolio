@@ -41,32 +41,19 @@ const ExperienceSection = () => {
     });
 
     // Animate the timeline height as the user scrolls
-    // from the top of the timeline to 70% down the screen
-    // The timeline height should scale down from 1 to 0
-    // as the user scrolls up the screen
     gsap.to('.timeline', {
-      // Set the origin of the animation to the bottom of the timeline
+      scaleY: 0,
       transformOrigin: 'bottom bottom',
-      // Animate the timeline height over 1 second
-      ease: 'power1.inOut',
-      // Trigger the animation when the timeline is at the top of the screen
-      // and end it when the timeline is at 70% down the screen
+      ease: 'none',
       scrollTrigger: {
         trigger: '.timeline',
         start: 'top center',
         end: '70% center',
-        // Update the animation as the user scrolls
-        onUpdate: (self) => {
-          // Scale the timeline height as the user scrolls
-          // from 1 to 0 as the user scrolls up the screen
-          gsap.to('.timeline', {
-            scaleY: 1 - self.progress,
-          });
-        },
+        scrub: true,
       },
     });
 
-    console.log('expCards', expCards);
+
     // Loop through each expText element and animate them in
     // as the user scrolls to each text element
     gsap.utils.toArray('.expText').forEach((text) => {
@@ -117,7 +104,7 @@ const ExperienceSection = () => {
                       <img
                         src={card.imgPath}
                         alt="exp-img"
-                        className="max-h-full object-container"
+                        className="max-h-full object-contain"
                       />
                     </div>
                   </GlowCard>
@@ -129,11 +116,11 @@ const ExperienceSection = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
+                      <div className="timeline-logo p-2">
                         <img
                           src={card.logoPath}
                           alt="logo"
-                          className="object-cover"
+                          className="object-contain"
                         />
                       </div>
                       <div>
@@ -141,32 +128,37 @@ const ExperienceSection = () => {
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
-                        <p className="text-[#839CB5] italic">
-                          {t('achievement')}
-                        </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
-                          {card.achievements.map((achievement, index) => (
-                            <li key={index} className="text-lg">
-                              {achievement}
-                            </li>
-                          ))}
-                        </ul>
                         <p className="text-[#839CB5] italic">{t('context')}</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
                           <li className="text-lg">{card.context}</li>
                         </ul>
                         <p className="text-[#839CB5] italic">
-                          {t('responsibilities')}
+                          {t('achievement')}
                         </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50 mb-3">
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className="text-lg">
-                                {responsibility}
-                              </li>
-                            ),
-                          )}
-                        </ul>
+                        <div className="mt-5 flex flex-col gap-8">
+                          {card.achievements.map((item, index) => (
+                            <div key={index}>
+                              {typeof item === 'string' ? (
+                                <ul className="list-disc ms-5 flex flex-col gap-5 text-white-50">
+                                  <li className="text-lg">{item}</li>
+                                </ul>
+                              ) : (
+                                <>
+                                  <p className="text-white font-semibold mb-4 text-xl">
+                                    {item.title}
+                                  </p>
+                                  <ul className="list-disc ms-5 flex flex-col gap-5 text-white-50">
+                                    {item.points.map((point, pIndex) => (
+                                      <li key={pIndex} className="text-lg">
+                                        {point}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </>
+                              )}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
