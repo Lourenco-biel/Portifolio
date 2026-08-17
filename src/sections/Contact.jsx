@@ -9,6 +9,7 @@ const Contact = () => {
   const { t } = useTranslation('contact');
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const lastSubmissionRef = useRef(0);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -22,6 +23,17 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const formData = new FormData(formRef.current);
+    const submittedAt = Date.now();
+
+    // Bots frequently fill hidden fields. Silently ignore those submissions.
+    if (formData.get('website')) return;
+
+    // Avoid accidental double submissions and basic automated flooding.
+    if (loading || submittedAt - lastSubmissionRef.current < 10_000) return;
+
+    lastSubmissionRef.current = submittedAt;
     setLoading(true);
 
     try {
@@ -55,6 +67,14 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
               >
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex="-1"
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute -left-[9999px]"
+                />
                 <div>
                   <label htmlFor="name">{t('forData.nameLabel')}</label>
                   <input
@@ -64,6 +84,9 @@ const Contact = () => {
                     value={form.name}
                     onChange={handleChange}
                     placeholder={t('forData.namePlaceholder')}
+                    minLength="2"
+                    maxLength="100"
+                    autoComplete="name"
                     required
                   />
                 </div>
@@ -77,6 +100,8 @@ const Contact = () => {
                     value={form.email}
                     onChange={handleChange}
                     placeholder={t('forData.emailPlaceholder')}
+                    maxLength="254"
+                    autoComplete="email"
                     required
                   />
                 </div>
@@ -90,11 +115,13 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder={t('forData.messagePlaceholder')}
                     rows="5"
+                    minLength="10"
+                    maxLength="2000"
                     required
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
