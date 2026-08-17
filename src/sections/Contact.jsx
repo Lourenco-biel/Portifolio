@@ -49,6 +49,17 @@ const Contact = () => {
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
+            <div className="card-border rounded-xl p-6 mb-6">
+              <h3 className="text-xl font-semibold mb-3">{t('directContact')}</h3>
+              <div className="flex flex-col gap-2 text-white-50">
+                <a className="hover:text-white transition-colors" href={`mailto:${t('email')}`}>
+                  {t('email')}
+                </a>
+                <a className="hover:text-white transition-colors" href="tel:+5511962781543">
+                  {t('phone')}
+                </a>
+              </div>
+            </div>
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}

@@ -16,7 +16,7 @@
     { "text": "Código", "imgPath": "/images/code.svg" }
   ],
   "counterItems": [
-    { "value": 3, "suffix": "+", "label": "Anos de Experiência" },
+    { "value": 4, "suffix": "+", "label": "Anos de Experiência" },
     { "value": 40, "suffix": "+", "label": "Projetos Concluídos" },
     { "value": 15, "suffix": "+", "label": "Tecnologias Dominadas" },
     { "value": 5, "suffix": "+", "label": "Setores de Mercado Atendidos" }
@@ -93,13 +93,50 @@
       "rotation": [0, -0.78539816339, 0]
     }
   ],
+  "profileInfo": {
+    "technicalTitle": "Competências técnicas",
+    "technical": [
+      "Linguagens: JavaScript, TypeScript e Python",
+      "Frameworks e bibliotecas: React.js, Next.js, Redux, Zustand, React Query, Zod, Django, Three.js e Framer Motion",
+      "Front-end: HTML5, CSS3, Sass, Tailwind CSS, Styled Components, Material UI, Reactstrap e shadcn/ui",
+      "Back-end e APIs: Node.js, Express.js, NestJS, REST, GraphQL, JWT, bcrypt e NextAuth.js",
+      "IA e LLMs: OpenAI API, integração de LLMs, Prompt Engineering, chatbots com IA e Orca",
+      "Dados e ferramentas: MongoDB, PostgreSQL, Prisma, Docker, Docker Compose, Git e Power BI Embedded",
+      "Testes: Jest, Cypress, Proxyman, Postman e testes mobile em iOS e Android"
+    ],
+    "languagesTitle": "Idiomas",
+    "languages": "Português, inglês e espanhol — experiência em projetos internacionais.",
+    "educationTitle": "Formação e certificações",
+    "education": [
+      "Bacharelado em Tecnologia da Informação — Estácio (curso trancado)",
+      "Formação Full-Stack Developer — Dev Club",
+      "CI/CD & DevOps — GitLab CI",
+      "The Ultimate Redux — Redux.js e Redux Saga",
+      "Certificação em C# e C# POO + Lógica de Programação Aplicada — Udemy"
+    ]
+  },
   "expCards": [
     {
-      "review": "Experiência como desenvolvedor independente liderando projetos críticos, desde a concepção até a entrega, com foco em arquitetura escalável e inovação com IA.",
+      "review": "Atuação na validação da integração da Rappi no aplicativo PicPay, garantindo uma experiência consistente e confiável em iOS e Android.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "QA Analyst — Freelance",
+      "date": "Junho 2025 - o momento",
+      "responsibilities": [],
+      "achievements": [
+        "Realizei testes funcionais, regressivos e exploratórios em fluxos de cupons, descontos e campanhas promocionais.",
+        "Identifiquei e documentei inconsistências de comportamento entre as versões iOS e Android.",
+        "Utilizei Proxyman para inspecionar requisições e respostas de APIs e auxiliar na identificação de problemas no backend e no aplicativo.",
+        "Ferramentas e tecnologias: Proxyman, APIs REST, testes mobile, Jira, Git e Postman."
+      ],
+      "context": "Rappi / PicPay · Freelance | Remoto. Validação de qualidade da integração da Rappi dentro do aplicativo PicPay."
+    },
+    {
+      "review": "Reestruturação de uma plataforma educacional, com foco em arquitetura escalável, experiência do usuário e engajamento.",
       "imgPath": "/images/freelance_logo.png",
       "logoPath": "/images/freelance_logo.png",
       "title": "Desenvolvedor de Software",
-      "date": "Março 2025 - o momento",
+      "date": "Janeiro 2026",
       "responsibilities": [],
       "achievements": [
         {
@@ -107,27 +144,18 @@
           "points": [
             "Liderei a reestruturação completa do front-end utilizando React, TypeScript e Tailwind CSS, redefinindo arquitetura, fluxos e UI, reduzindo complexidade e preparando o produto para escala.",
             "Reorganizei a arquitetura front-end com foco em escalabilidade e manutenção, aplicando boas práticas (Clean Architecture e Calisthenics), reduzindo acoplamento e melhorando a previsibilidade de evolução do sistema.",
-            "Atuou diretamente na evolução de uma plataforma educacional complexa, com múltiplos perfis (aluno e criador), suportando conteúdos diversos (vídeo, áudio, PDF) e fluxos dinâmicos de gerenciamento com suporte multilíngue (PT/EN).",
+            "Atuei diretamente na evolução de uma plataforma educacional complexa, com múltiplos perfis (aluno e criador), suportando conteúdos diversos (vídeo, áudio e PDF) e fluxos dinâmicos de gerenciamento com suporte multilíngue (PT/EN).",
             "Desenvolvi e otimizei features de engajamento como gamificação, comentários, likes e compartilhamento de aulas, além de feed de notícias contextual, aumentando retenção e interação dos usuários."
-          ]
-        },
-        {
-          "title": "Freelancer — Projeto Independente | Engenharia Civil / AI-first",
-          "points": [
-            "Atuei desde a concepção do produto junto ao cliente, levantando requisitos funcionais e não funcionais e definindo arquitetura da solução baseada em DDD (Domain-Driven Design) e Clean Architecture, com foco em escalabilidade e automação.",
-            "Projetei um sistema de gestão de obras (Next.js, Nest.js) com abordagem AI-first baseados em input por áudio para registro de atividades, cobrindo desde planejamento, orçamento e cronograma até execução e diário de obra em campo.",
-            "Desenvolvi integrações com APIs externas (incluindo serviços de clima e automação de relatórios), ampliando a inteligência do sistema e reduzindo tarefas manuais no processo de gestão.",
-            "Estruturei fluxos de comunicação entre áreas (engenharia, compras, operação), permitindo aprovação de mudanças, rastreabilidade e maior controle sobre o ciclo de execução da obra."
           ]
         }
       ],
-      "context": "Como desenvolvedor de software, trabalhei em diversos projetos, tomando decisões arquitetônicas, otimizando o desempenho e liderando o desenvolvimento de funcionalidades."
+      "context": "Indigo Hive · Freelance | Remoto. Atuação em decisões arquitetônicas, otimização de desempenho e desenvolvimento de funcionalidades."
     },
     {
       "review": "A qualidade excepcional do código do Gabriel e sua mentalidade orientada a processos transformaram nosso fluxo de desenvolvimento. Suas soluções técnicas não apenas melhoraram o desempenho, mas também estabeleceram práticas sustentáveis.",
       "imgPath": "/images/rappi_logo.png",
       "logoPath": "/images/rappi_logo.png",
-      "title": "Desenvolvedor Frontend Pleno",
+      "title": "Desenvolvedor Frontend",
       "date": "Junho 2023 - Fevereiro 2025",
       "responsibilities": [],
       "achievements": [
@@ -145,7 +173,7 @@
       "review": "Gabriel é a definição de velocidade! Sua curva de aprendizado foi extremamente rápida e ele desenvolveu funcionalidades chave em poucas semanas. A qualidade e segurança do seu código trazem tranquilidade para todo o time.",
       "imgPath": "/images/Box-Delivery-Branco.png",
       "logoPath": "/images/Box-Delivery-Branco.png",
-      "title": "Desenvolvedor Frontend Jr",
+      "title": "Desenvolvedor Frontend",
       "date": "Agosto 2022 - Julho 2023",
       "responsibilities": [],
       "achievements": [

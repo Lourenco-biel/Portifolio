@@ -16,7 +16,7 @@
     { "text": "Code", "imgPath": "/images/code.svg" }
   ],
   "counterItems": [
-    { "value": 3, "suffix": "+", "label": "Years of Experience" },
+    { "value": 4, "suffix": "+", "label": "Years of Experience" },
     { "value": 40, "suffix": "+", "label": "Completed Projects" },
     { "value": 15, "suffix": "+", "label": "Mastered Technologies" },
     { "value": 5, "suffix": "+", "label": "Served Market Sectors" }
@@ -90,13 +90,50 @@
       "rotation": [0, -0.7854, 0]
     }
   ],
+  "profileInfo": {
+    "technicalTitle": "Technical skills",
+    "technical": [
+      "Languages: JavaScript, TypeScript, and Python",
+      "Frameworks and libraries: React.js, Next.js, Redux, Zustand, React Query, Zod, Django, Three.js, and Framer Motion",
+      "Frontend: HTML5, CSS3, Sass, Tailwind CSS, Styled Components, Material UI, Reactstrap, and shadcn/ui",
+      "Backend and APIs: Node.js, Express.js, NestJS, REST, GraphQL, JWT, bcrypt, and NextAuth.js",
+      "AI and LLMs: OpenAI API, LLM integrations, Prompt Engineering, AI chatbots, and Orca",
+      "Data and tools: MongoDB, PostgreSQL, Prisma, Docker, Docker Compose, Git, and Power BI Embedded",
+      "Testing: Jest, Cypress, Proxyman, Postman, and mobile testing on iOS and Android"
+    ],
+    "languagesTitle": "Languages",
+    "languages": "Portuguese, English, and Spanish — experience working on international projects.",
+    "educationTitle": "Education and certifications",
+    "education": [
+      "Bachelor's in Information Technology — Estácio (degree paused)",
+      "Full-Stack Developer Program — Dev Club",
+      "CI/CD & DevOps — GitLab CI",
+      "The Ultimate Redux — Redux.js and Redux Saga",
+      "C# Certification and C# OOP + Applied Programming Logic — Udemy"
+    ]
+  },
   "expCards": [
     {
-      "review": "Experience as an independent developer leading critical projects from conception to delivery, focusing on scalable architecture and AI innovation.",
+      "review": "Quality assurance for the Rappi integration within the PicPay app, ensuring a consistent and reliable experience on iOS and Android.",
+      "imgPath": "/images/rappi_logo.png",
+      "logoPath": "/images/rappi_logo.png",
+      "title": "QA Analyst — Freelance",
+      "date": "June 2025 - Present",
+      "responsibilities": [],
+      "achievements": [
+        "Performed functional, regression, and exploratory testing on coupon, discount, and promotional campaign flows.",
+        "Identified and documented behavioral inconsistencies between iOS and Android versions.",
+        "Used Proxyman to inspect API requests and responses, helping identify backend and app issues.",
+        "Tools and technologies: Proxyman, REST APIs, mobile testing, Jira, Git, and Postman."
+      ],
+      "context": "Rappi / PicPay · Freelance | Remote. Quality assurance for the Rappi integration within the PicPay app."
+    },
+    {
+      "review": "Restructured an educational platform with a focus on scalable architecture, user experience, and engagement.",
       "imgPath": "/images/freelance_logo.png",
       "logoPath": "/images/freelance_logo.png",
       "title": "Software Developer",
-      "date": "March 2025 - Present",
+      "date": "January 2026",
       "responsibilities": [],
       "achievements": [
         {
@@ -107,18 +144,9 @@
             "Acted directly in the evolution of a complex educational platform with multiple profiles (student and creator), supporting diverse content (video, audio, PDF) and dynamic management flows with multilingual support (PT/EN).",
             "Developed and optimized engagement features such as gamification, comments, likes, and lesson sharing, as well as contextual news feeds, increasing user retention and interaction."
           ]
-        },
-        {
-          "title": "Freelancer — Independent Project | Civil Engineering / AI-first",
-          "points": [
-            "Acted from product conception with the client, gathering functional and non-functional requirements and defining the solution architecture based on DDD (Domain-Driven Design) and Clean Architecture, focusing on scalability and automation.",
-            "Designed a construction management system (Next.js, Nest.js) with an AI-first approach based on audio input for activity logging, covering everything from planning, budget, and schedule to execution and field site daily logs.",
-            "Developed integrations with external APIs (including weather services and report automation), expanding system intelligence and reducing manual tasks in the management process.",
-            "Structured communication flows between areas (engineering, purchasing, operation), allowing for change approval, traceability, and greater control over the construction execution cycle."
-          ]
         }
       ],
-      "context": "As a software developer, I worked on various projects, making architectural decisions, optimizing performance, and leading feature development."
+      "context": "Indigo Hive · Freelance | Remote. Worked on architectural decisions, performance optimization, and feature development."
     },
     {
       "review": "Gabriel's exceptional code quality and process-oriented mindset transformed our development flow. His technical solutions not only improved performance but also established sustainable practices.",
@@ -142,7 +170,7 @@
       "review": "Gabriel is the definition of speed! His learning curve was extremely fast, and he developed key features in just a few weeks. The quality and security of his code bring peace of mind to the whole team.",
       "imgPath": "/images/Box-Delivery-Branco.png",
       "logoPath": "/images/Box-Delivery-Branco.png",
-      "title": "Junior Frontend Developer",
+      "title": "Frontend Developer",
       "date": "August 2022 - July 2023",
       "responsibilities": [],
       "achievements": [

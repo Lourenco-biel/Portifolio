@@ -10,7 +10,7 @@ import { Suspense, useRef } from 'react';
 
 const TechStack = () => {
   const { t } = useTranslation('techStack');
-  const { techStackIcons } = useConstants();
+  const { techStackIcons, profileInfo } = useConstants();
   const containerRef = useRef();
 
   useGSAP(() => {
@@ -57,6 +57,24 @@ const TechStack = () => {
             </div>
           ))}
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+          <article className="card-border rounded-2xl p-6 lg:row-span-2">
+            <h3 className="text-2xl font-semibold mb-5">{profileInfo.technicalTitle}</h3>
+            <ul className="list-disc ms-5 flex flex-col gap-3 text-white-50">
+              {profileInfo.technical.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article className="card-border rounded-2xl p-6">
+            <h3 className="text-2xl font-semibold mb-3">{profileInfo.languagesTitle}</h3>
+            <p className="text-white-50">{profileInfo.languages}</p>
+          </article>
+          <article className="card-border rounded-2xl p-6">
+            <h3 className="text-2xl font-semibold mb-5">{profileInfo.educationTitle}</h3>
+            <ul className="list-disc ms-5 flex flex-col gap-3 text-white-50">
+              {profileInfo.education.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+        </div>
       </div>
       
       {/* Global Canvas for all Views */}
@@ -80,4 +98,3 @@ const TechStack = () => {
 };
 
 export default TechStack;
-

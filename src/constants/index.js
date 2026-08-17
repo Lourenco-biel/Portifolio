@@ -10,6 +10,7 @@ export function useConstants() {
   const abilities = t('abilities', { returnObjects: true });
   const techStackImgs = t('techStackImgs', { returnObjects: true });
   const techStackIcons = t('techStackIcons', { returnObjects: true });
+  const profileInfo = t('profileInfo', { returnObjects: true });
   const expCards = t('expCards', { returnObjects: true });
   const expLogos = t('expLogos', { returnObjects: true });
   const testimonials = t('testimonials', { returnObjects: true });
@@ -23,6 +24,7 @@ export function useConstants() {
     abilities,
     techStackImgs,
     techStackIcons,
+    profileInfo,
     expCards,
     expLogos,
     testimonials,
