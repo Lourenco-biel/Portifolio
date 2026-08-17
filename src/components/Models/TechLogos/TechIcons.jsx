@@ -1,5 +1,5 @@
 import { Environment, Float, useGLTF, View } from '@react-three/drei';
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import * as THREE from 'three';
 
 const TechIcons = ({ model }) => {
@@ -31,4 +31,3 @@ const TechIcons = ({ model }) => {
 };
 
 export default TechIcons;
-

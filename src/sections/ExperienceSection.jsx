@@ -100,11 +100,11 @@ const ExperienceSection = () => {
               >
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div className="w-60 h-24 flex items-center justify-normal">
+                    <div className="w-full max-w-60 h-24 flex items-center justify-start">
                       <img
                         src={card.imgPath}
-                        alt="exp-img"
-                        className="max-h-full object-contain"
+                        alt={`Logo da experiência: ${card.title}`}
+                        className="block w-auto h-auto max-w-full max-h-full object-contain object-left"
                       />
                     </div>
                   </GlowCard>
@@ -119,8 +119,8 @@ const ExperienceSection = () => {
                       <div className="timeline-logo p-2">
                         <img
                           src={card.logoPath}
-                          alt="logo"
-                          className="object-contain"
+                          alt={`Logo da experiência: ${card.title}`}
+                          className="block size-full aspect-square rounded-full object-contain"
                         />
                       </div>
                       <div>
